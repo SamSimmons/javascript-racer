@@ -1,5 +1,32 @@
 .wrapper {
-  width: 100%;
-  background-color: green;
+  width: 50%;
+  background-color: #16B231;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.road-left {
+  background-color: #565656;
+  width: 20%;
+  height: 10vh;
+}
+
+.road-right {
+  background-color: #565656;
+  width: 20%;
+  height: 10vh;
+}
+
+.red {
+  background-color: red;
+  width: 20%;
+  height: 10vh;
 }
