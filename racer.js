@@ -1,4 +1,6 @@
 var trackLength = 10;
+var left = document.querySelector('.road-left');
+var right = document.querySelector('.road-right');
 // f = 70 j = 74
 
 var setTrackLength = function () {
@@ -60,21 +62,34 @@ var moveCar = function (lane) {
 }
 
 var init = function() {
-  addEventListener('keyup', keyPressed );
+  left = document.querySelector('.road-left');
+  right = document.querySelector('.road-right');
+  trackLength = document.querySelector('#trackLength').value;
+  setTrackLength();
+  addEventListener('keyup', keyPressed);
   left.classList.add('car-left');
   right.classList.add('car-right');
-}
+};
 
 var reset = function () {
   left.classList.remove('car-left');
   right.classList.remove('car-right');
   left = document.querySelector('.road-left');
   right = document.querySelector('.road-right');
+  resetTrack();
   init();
 };
 
-setTrackLength(trackLength);
+var resetTrack = function (){
+  var leftElement = document.querySelector('.road-left');
+  var rightElement = document.querySelector('.road-right');
+  for (var i = 0; i < trackLength; i++) {
+    leftElement.nextElementSibling.remove();
+    rightElement.nextElementSibling.remove();
+  }
+};
 
-var left = document.querySelector('.road-left');
-var right = document.querySelector('.road-right');
-// init();
+var resetBtn = document.querySelector('#reset');
+resetBtn.addEventListener('click', reset);
+
+init();

@@ -26,8 +26,8 @@
 }
 
 .finish-line {
-  background: linear-gradient(#565656, #fff);
-  height: 1vh;
+  background: linear-gradient(to bottom, #565656 90%, #fff);
+  height: 10vh;
   width: 20%;
 }
 
@@ -76,3 +76,4 @@
   background-color: #333;
   transition: .3s;
 }
+
