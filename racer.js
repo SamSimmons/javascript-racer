@@ -24,17 +24,19 @@ var moveCar = function (lane) {
       return;
     }
     left = left.nextElementSibling;
-    left.classList.add('red');
-    left.previousElementSibling.classList.remove('red');
+    left.classList.add('car-left');
+    left.previousElementSibling.classList.remove('car-left');
   } else if (lane === 'right') {
       if (right.nextElementSibling === null) {
         winner('right');
         return;
       }
     right = right.nextElementSibling;
-    right.classList.add('red');
-    right.previousElementSibling.classList.remove('red');
+    right.classList.add('car-right');
+    right.previousElementSibling.classList.remove('car-right');
   }
 }
 
 addEventListener('keyup', keyPressed );
+left.classList.add('car-left');
+right.classList.add('car-right');

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"key",
+				"keyPressed"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ht",
+				"html5	Simple HTML5 Boilerplate"
+			],
+			[
 				"exerci",
 				"exercise3"
 			],
@@ -22,10 +38,6 @@
 			[
 				"padding",
 				"padding-bottom"
-			],
-			[
-				"flex",
-				"flex-start"
 			],
 			[
 				"border",
@@ -62,10 +74,6 @@
 			[
 				"3Dumb",
 				"3Dumb-webfont"
-			],
-			[
-				"back",
-				"background"
 			],
 			[
 				"min",
@@ -143,7 +151,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1043,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "racer.css",
+			"settings":
+			{
+				"buffer_size": 423,
 				"line_ending": "Unix"
 			}
 		},
@@ -151,7 +167,7 @@
 			"file": "racer.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1049,
 				"line_ending": "Unix"
 			}
 		}
@@ -215,8 +231,14 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/dev/workspace/eda/javascript-racer"
+	],
 	"file_history":
 	[
+		"/home/dev/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/dev/workspace/eda/javascript-racer/reset.css",
 		"/home/dev/workspace/eda/javascript-racer/index.html",
 		"/home/dev/workspace/eda/javascript-racer/racer.js",
 		"/home/dev/workspace/eda/sprint-5/test-page.html",
@@ -299,7 +321,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -308,20 +330,48 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1043,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								825,
+								825
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "racer.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -331,20 +381,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "racer.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1049,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								405,
+								405
 							]
 						],
 						"settings":
@@ -352,7 +402,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
