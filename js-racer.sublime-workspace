@@ -1,0 +1,446 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"exerci",
+				"exercise3"
+			],
+			[
+				"exercise",
+				"exercise2"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"ff",
+				"ff3030"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"3d",
+				"3dumbregular"
+			],
+			[
+				"3Dumb",
+				"3Dumb-webfont"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"links",
+				"links	link - stylesheet"
+			],
+			[
+				"column",
+				"column-count"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"sty",
+				"stylesheet"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"hr",
+				"href	Attr"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"a",
+				"a	<a>"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "racer.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"REmo",
+				"Package Control: Remove Package"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 341.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/dev/workspace/eda/javascript-racer/index.html",
+		"/home/dev/workspace/eda/javascript-racer/racer.js",
+		"/home/dev/workspace/eda/sprint-5/test-page.html",
+		"/home/dev/workspace/eda/sprint-5/eloquent-2.js",
+		"/home/dev/workspace/eda/hihi-2016/EE/sam-simmons/4-reflection.md",
+		"/home/dev/workspace/eda/hihi-2016/EE/sam-simmons/3-reflection.md",
+		"/home/dev/workspace/eda/SamSimmons.github.io/index.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/style/main.css",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/blog-index.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/c4-daily-mindfulness.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/blog-template.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/t4-javascript-basics.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/c3-meditation-process.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/t2-html-css-dom-p2.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/t2-html-css-dom-p1.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/t3-design-to-web-blog.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/c1-time-and-habits-blog.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/c2-emotional-intelligence.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/blog/c1-reflection-blog.html",
+		"/home/dev/workspace/eda/SamSimmons.github.io/style/blog.css",
+		"/home/dev/workspace/eda/sprint-2/pristine-zen-garden.html",
+		"/home/dev/workspace/eda/hihi-2016/EE/sam-simmons/2-reflection.md",
+		"/home/dev/id_rsa.pub",
+		"/home/dev/workspace/eda/SamSimmons.github.io/style/technical-blog.css",
+		"/home/dev/workspace/udacity/lesson-1/toplist/style.css",
+		"/home/dev/workspace/udacity/lesson-1/toplist/index.html",
+		"/home/dev/workspace/udacity/app.html",
+		"/home/dev/workspace/eda/hihi-2016/EE/sam-simmons/1-reflection.md",
+		"/home/dev/workspace/eda/sprint-1/command-line.md",
+		"/home/dev/workspace/eda/SamSimmons.github.io/style/reset.css",
+		"/home/dev/workspace/eda/hihi-2016/fruit-bowl/sam-simmons/plum.sam/README.md",
+		"/home/dev/workspace/eda/hihi-2016/fruit-bowl/paramu.sam",
+		"/home/dev/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"section",
+			"h4",
+			"media",
+			"blog st",
+			"}\n",
+			"column",
+			"blog st",
+			"min",
+			"004245",
+			"ac2cd5",
+			"f72c25",
+			"ff3030"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"390052",
+			"004245",
+			"ac2cd5"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "racer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "js-racer.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
