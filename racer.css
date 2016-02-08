@@ -1,10 +1,9 @@
-.wrapper {
+.track-wrapper {
   width: 50%;
   background-color: #16B231;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-
+  flex-direction: column-reverse;
 }
 
 .content {
@@ -13,32 +12,34 @@
   flex-direction: row;
 }
 
-.road-left {
+.road-start {
+  background-color: #565656;
+  width: 20%;
+  height: 10vh;
+  color: #ddd;
+  font-family: Consolas;
+  font-size: .75em
+}
+
+.track-piece {
   background-color: #565656;
   width: 20%;
   height: 10vh;
 }
-
-.road-right {
-  background-color: #565656;
-  width: 20%;
-  height: 10vh;
-}
-
 .finish-line {
-  background: linear-gradient(to bottom, #565656 90%, #fff);
+  background: linear-gradient(to top, #565656 95%, #fff);
   height: 10vh;
   width: 20%;
 }
 
-.car-left {
+.car-0 {
   background: #565656 url('blue-car.svg') center no-repeat;
   background-size: contain;
   width: 20%;
   height: 10vh;
 }
 
-.car-right {
+.car-1 {
   background: #565656 url('red-car.svg') center no-repeat;
   background-size: contain;
   width: 20%;
@@ -60,20 +61,90 @@
   width: 25%;
   opacity: .8;
   padding: 3%;
-  border: 1px solid #fff;
+  border: 1px dotted #fff;
   margin: 2%;
 }
 
 .control-panel button {
-  background-color: #000;
+  background-color: #f00;
   border: 1px solid #fff;
   border-radius: 5px;
   color: white;
-  padding: 2%;
+  padding: 3%;
+  margin: 2%;
+  font-size: 1.5em;
 }
 
 .control-panel button:hover {
   background-color: #333;
   transition: .3s;
 }
+.control-panel p {
+  line-height: 1.25em;
+  font-family: Consolas;
+  padding: 1%;
+}
 
+.control-panel .go {
+  background-color: #00f;
+}
+
+input {
+  max-width: 15%;
+}
+
+.overlay {
+  z-index: 5;
+  width: 30vw;
+  height: 20vh;
+  margin-left: -15vw;
+  margin-top: -20vh;
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px dotted white;
+  color: #fff;
+  padding: 3%;
+}
+
+.starter-lights {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  background-color: #000;
+  color: white;
+  width: 25%;
+  opacity: .8;
+  padding: 3%;
+  border: 1px dotted #fff;
+  margin: 2%;
+}
+
+.light {
+  border-radius: 50%;
+  background-color: #666;
+  height: 10vh;
+  width: 10vh;
+  margin: 5% auto;
+}
+
+.red {
+  background-color: #f00;
+}
+
+.orange {
+  background-color: #f74;
+}
+
+.green {
+  background-color: #0f2;
+}
+
+.off { 
+  opacity: .2;
+}
+
+.on {
+  opacity: 1;
+}
