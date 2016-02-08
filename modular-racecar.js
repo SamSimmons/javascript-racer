@@ -57,12 +57,23 @@ var racecarGame = (function() {
 	};
 
 	var winner = function(lane) {
-		confirm('the car in lane ' + lane + ' wins!');
+		var winBox = document.createElement('div');
+		winBox.innerHTML = "<p>Congratulations to the driver in lane " + lane + ". They are the winner, press reset to race again!</p>";
+		winBox.classList.add('overlay');
+		document.body.appendChild(winBox);
 		removeEventListener('keyup', keyPressed);
 	};
 
+	var removeWinner = function() {
+		document.querySelector('.overlay').remove();
+	}
+
 	var reset = function () {
+		if ( document.querySelector('.overlay') ) {
+			removeWinner();
+		}		
 		eraseTrack();
+		resetLights();
 		init();
 	};
 
@@ -76,8 +87,32 @@ var racecarGame = (function() {
 		}
 	};
 
+	var startLights = function () {
+		var twoSecDelay = function() {
+			var light = document.querySelector('.off');
+			light.classList.toggle('on');
+			light.classList.toggle('off');
+		}
+		setTimeout(twoSecDelay, 1500);
+		setTimeout(twoSecDelay, 3000);		
+	};
+
+//refactor to make DRY
+	var resetLights = function () {
+		var orange = document.querySelector('#orangeLight')
+		orange.classList.remove('on');
+		orange.classList.add('off');
+		var green = document.querySelector('#greenLight')
+		green.classList.remove('on');
+		green.classList.add('off');
+	
+	}
+
 	var resetBtn = document.querySelector('#reset');
+	var goBtn = document.querySelector('#go');
 	resetBtn.addEventListener('click', reset);
+	goBtn.addEventListener('click', startLights);
+
 
 	init();
 
