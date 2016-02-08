@@ -1,10 +1,9 @@
-.wrapper {
+.track-wrapper {
   width: 50%;
   background-color: #16B231;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-
+  flex-direction: column-reverse;
 }
 
 .content {
@@ -13,32 +12,34 @@
   flex-direction: row;
 }
 
-.road-left {
+.road-start {
+  background-color: #565656;
+  width: 20%;
+  height: 10vh;
+  color: #ddd;
+  font-family: Consolas;
+  font-size: .75em
+}
+
+.track-piece {
   background-color: #565656;
   width: 20%;
   height: 10vh;
 }
-
-.road-right {
-  background-color: #565656;
-  width: 20%;
-  height: 10vh;
-}
-
 .finish-line {
-  background: linear-gradient(to bottom, #565656 90%, #fff);
+  background: linear-gradient(to top, #565656 95%, #fff);
   height: 10vh;
   width: 20%;
 }
 
-.car-left {
+.car-0 {
   background: #565656 url('blue-car.svg') center no-repeat;
   background-size: contain;
   width: 20%;
   height: 10vh;
 }
 
-.car-right {
+.car-1 {
   background: #565656 url('red-car.svg') center no-repeat;
   background-size: contain;
   width: 20%;
@@ -75,5 +76,10 @@
 .control-panel button:hover {
   background-color: #333;
   transition: .3s;
+}
+.control-panel p {
+  line-height: 1.25em;
+  font-family: Consolas;
+  padding: 1%;
 }
 
