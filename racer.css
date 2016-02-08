@@ -25,6 +25,12 @@
   height: 10vh;
 }
 
+.finish-line {
+  background: linear-gradient(#565656, #fff);
+  height: 1vh;
+  width: 20%;
+}
+
 .car-left {
   background: #565656 url('blue-car.svg') center no-repeat;
   background-size: contain;
@@ -45,4 +51,28 @@
 
 .right-track {
   align-items: flex-start;
+}
+
+.control-panel {
+  position: absolute;
+  background-color: #000;
+  color: white;
+  width: 25%;
+  opacity: .8;
+  padding: 3%;
+  border: 1px solid #fff;
+  margin: 2%;
+}
+
+.control-panel button {
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: white;
+  padding: 2%;
+}
+
+.control-panel button:hover {
+  background-color: #333;
+  transition: .3s;
 }
