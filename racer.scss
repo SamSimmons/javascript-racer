@@ -1,7 +1,19 @@
+$trackHeight: 10vh;
+$sand: #FFD36F;
+$track: #BF9E53;
+
+
+.sky {
+  background: skyblue;
+  width: 100%;
+  height: 20vh;
+}
+
+
 .track-wrapper {
   width: 50%;
-  background-color: #fff;
-  height: 100vh;
+  background-color: $sand;
+  height: 80vh;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -10,40 +22,42 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .road-start {
   background-color: #565656;
   width: 20%;
-  height: 10vh;
+  height: $trackHeight;
   color: #ddd;
   font-family: Consolas;
   font-size: .75em
 }
 
 .track-piece {
-  background-color: #565656;
+  background-color: $track;
   width: 20%;
-  height: 10vh;
+  height: $trackHeight;
+  flex-grow: 2;
 }
 .finish-line {
-  background: linear-gradient(to top, #565656 95%, #fff);
-  height: 10vh;
+  background: linear-gradient(to top, $track 95%, #fff);
+  height: $trackHeight;
   width: 20%;
 }
 
 .car-0 {
-  background: #565656 url('blue-car.svg') center no-repeat;
+  background: $track url('blue-car.svg') center no-repeat;
   background-size: contain;
   width: 20%;
-  height: 10vh;
+  height: $trackHeight;
 }
 
 .car-1 {
-  background: #565656 url('red-car.svg') center no-repeat;
+  background: $track url('red-car.svg') center no-repeat;
   background-size: contain;
   width: 20%;
-  height: 10vh;
+  height: $trackHeight;
 }
 
 .left-track {
@@ -121,30 +135,81 @@ input {
   margin: 2%;
 }
 
-.light {
-  border-radius: 50%;
-  background-color: #666;
-  height: 10vh;
-  width: 10vh;
-  margin: 5% auto;
+
+
+.starter-lights {
+  display: none;
+
+  .light {
+    border-radius: 50%;
+    background-color: #666;
+    height: $trackHeight;
+    width: $trackHeight;
+    margin: 5% auto;
+  }
+
+  .red {
+    background-color: #f00;
+  }
+
+  .orange {
+    background-color: #f74;
+  }
+
+  .green {
+    background-color: #0f2;
+  }
+
+  .off { 
+    opacity: .2;
+  }
+
+  .on {
+    opacity: 1;
+  }
 }
 
-.red {
-  background-color: #f00;
-}
+.track-wrapper {
+  .track-height-index-0 {
+    height: $trackHeight + 10vh;
+  }
 
-.orange {
-  background-color: #f74;
-}
+  .track-height-index-1 {
+    height: $trackHeight + 9vh;
+  }
 
-.green {
-  background-color: #0f2;
-}
+  .track-height-index-2 {
+    height: $trackHeight + 8vh;
+  }
 
-.off { 
-  opacity: .2;
-}
+  .track-height-index-3 {
+    height: $trackHeight  + 7vh;
+  }
 
-.on {
-  opacity: 1;
+  .track-height-index-4 {
+    height: $trackHeight  + 6vh;
+  }
+
+  .track-height-index-5 {
+    height: $trackHeight + 5vh;
+  }
+
+  .track-height-index-6 {
+    height: $trackHeight + 4vh;
+  }
+
+  .track-height-index-7 {
+    height: $trackHeight + 3vh;
+  }
+
+  .track-height-index-8 {
+    height: $trackHeight + 2vh;
+  }
+
+  .track-height-index-9 {
+    height: $trackHeight + 1vh;
+  }
+
+
+
 }
