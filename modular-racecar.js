@@ -3,11 +3,15 @@ var racecarGame = (function() {
 	var trackStart = document.querySelector('.road-start');
 	var playerOneKey = 70;
 	var playerTwoKey = 74;
+	var startTime;
+	var endTime;
+
+
 
 	var init = function () {
 		trackLength = document.querySelector('#trackLength').value;
 		setTrackLength(trackLength);
-		addEventListener('keyup', keyPressed);
+		//addEventListener('keyup', keyPressed);
 		addCars();
 	};
 
@@ -48,6 +52,9 @@ var racecarGame = (function() {
 	var moveCar = function (lane) {
 		var movingCar = document.querySelector('.car-' + lane);
 		if (movingCar.nextElementSibling === null) {
+				endTime = Date.now();
+				var raceTime = Math.round((endTime - startTime)/ 1000);
+				console.log(raceTime, "seconds?");
 				winner(lane);
 				return;
 		}
@@ -93,8 +100,13 @@ var racecarGame = (function() {
 			light.classList.toggle('on');
 			light.classList.toggle('off');
 		}
-		setTimeout(twoSecDelay, 1500);
-		setTimeout(twoSecDelay, 3000);		
+		setTimeout(twoSecDelay, 1000);
+		setTimeout(twoSecDelay, 2000);
+		setTimeout(() => {
+			startTime = Date.now();
+			console.log(startTime);
+			addEventListener('keyup', keyPressed);
+			}, 2000);	
 	};
 
 //refactor to make DRY
