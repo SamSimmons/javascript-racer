@@ -1,0 +1,215 @@
+$trackHeight: 10vh;
+$sand: #FFD36F;
+$track: #BF9E53;
+
+
+.sky {
+  background: skyblue;
+  width: 100%;
+  height: 20vh;
+}
+
+
+.track-wrapper {
+  width: 50%;
+  background-color: $sand;
+  height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.road-start {
+  background-color: #565656;
+  width: 20%;
+  height: $trackHeight;
+  color: #ddd;
+  font-family: Consolas;
+  font-size: .75em
+}
+
+.track-piece {
+  background-color: $track;
+  width: 20%;
+  height: $trackHeight;
+  flex-grow: 2;
+}
+.finish-line {
+  background: linear-gradient(to top, $track 95%, #fff);
+  height: $trackHeight;
+  width: 20%;
+}
+
+.car-0 {
+  background: $track url('blue-car.svg') center no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: $trackHeight;
+}
+
+.car-1 {
+  background: $track url('red-car.svg') center no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: $trackHeight;
+}
+
+.left-track {
+  align-items: flex-end;
+}
+
+.right-track {
+  align-items: flex-start;
+}
+
+.control-panel {
+  position: absolute;
+  background-color: #000;
+  color: white;
+  width: 25%;
+  opacity: .8;
+  padding: 3%;
+  border: 1px dotted #fff;
+  margin: 2%;
+}
+
+.control-panel button {
+  background-color: #f00;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: white;
+  padding: 3%;
+  margin: 2%;
+  font-size: 1.5em;
+}
+
+.control-panel button:hover {
+  background-color: #333;
+  transition: .3s;
+}
+.control-panel p {
+  line-height: 1.25em;
+  font-family: Consolas;
+  padding: 1%;
+}
+
+.control-panel .go {
+  background-color: #00f;
+}
+
+input {
+  max-width: 15%;
+}
+
+.overlay {
+  z-index: 5;
+  width: 30vw;
+  height: 20vh;
+  margin-left: -15vw;
+  margin-top: -20vh;
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px dotted white;
+  color: #fff;
+  padding: 3%;
+}
+
+.starter-lights {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  background-color: #000;
+  color: white;
+  width: 25%;
+  opacity: .8;
+  padding: 3%;
+  border: 1px dotted #fff;
+  margin: 2%;
+}
+
+
+
+.starter-lights {
+  display: none;
+
+  .light {
+    border-radius: 50%;
+    background-color: #666;
+    height: $trackHeight;
+    width: $trackHeight;
+    margin: 5% auto;
+  }
+
+  .red {
+    background-color: #f00;
+  }
+
+  .orange {
+    background-color: #f74;
+  }
+
+  .green {
+    background-color: #0f2;
+  }
+
+  .off { 
+    opacity: .2;
+  }
+
+  .on {
+    opacity: 1;
+  }
+}
+
+.track-wrapper {
+  .track-height-index-0 {
+    height: $trackHeight + 10vh;
+  }
+
+  .track-height-index-1 {
+    height: $trackHeight + 9vh;
+  }
+
+  .track-height-index-2 {
+    height: $trackHeight + 8vh;
+  }
+
+  .track-height-index-3 {
+    height: $trackHeight  + 7vh;
+  }
+
+  .track-height-index-4 {
+    height: $trackHeight  + 6vh;
+  }
+
+  .track-height-index-5 {
+    height: $trackHeight + 5vh;
+  }
+
+  .track-height-index-6 {
+    height: $trackHeight + 4vh;
+  }
+
+  .track-height-index-7 {
+    height: $trackHeight + 3vh;
+  }
+
+  .track-height-index-8 {
+    height: $trackHeight + 2vh;
+  }
+
+  .track-height-index-9 {
+    height: $trackHeight + 1vh;
+  }
+
+
+
+}

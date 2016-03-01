@@ -1,0 +1,19 @@
+{
+  "name": "javascript-racer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "modular-racecar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamSimmons/javascript-racer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamSimmons/javascript-racer/issues"
+  },
+  "homepage": "https://github.com/SamSimmons/javascript-racer#readme"
+}

@@ -14,6 +14,7 @@ var racecarGame = (function() {
 		setTrackLength(trackLength);
 		//addEventListener('keyup', keyPressed);
 		addCars();
+		setHorizon();
 	};
 
 	var setTrackLength = function (length) {
@@ -44,7 +45,7 @@ var racecarGame = (function() {
 	};
 
 	var addCars = function () {
-		var allStartLines = document.querySelectorAll('.road-start')
+		var allStartLines = document.querySelectorAll('.road-start');
 		for (var i = 0; i < allStartLines.length; i++) {
 			allStartLines[i].classList.add('car-' + i);
 		}
@@ -97,14 +98,18 @@ var racecarGame = (function() {
 	};
 
 	var startLights = function () {
+		document.querySelector('.starter-lights').style.display = "block";
 		var twoSecDelay = function() {
 			var light = document.querySelector('.off');
 			light.classList.toggle('on');
 			light.classList.toggle('off');
-		}
+		};
 		setTimeout(twoSecDelay, 1000);
 		setTimeout(twoSecDelay, 2000);
-		setTimeout(enableRace, 2000);	
+		setTimeout(enableRace, 2000);
+		setTimeout(() => {
+			document.querySelector('.starter-lights').style.display = "none";
+		}, 2500);	
 	};
 
 //refactor to make DRY
@@ -115,8 +120,18 @@ var racecarGame = (function() {
 		var green = document.querySelector('#greenLight')
 		green.classList.remove('on');
 		green.classList.add('off');
-	
 	}
+
+	var setHorizon = function () {
+		var tracks = document.querySelectorAll('.track-wrapper');
+		for (var i = 0; i < tracks.length; i++) {
+			var trackPieces = tracks[i].children;
+			for (var j = 0; j < trackPieces.length; j++) {
+				trackPieces[j].classList.add('track-height-index-' + j);
+			}
+		}
+		var allStartLines = document.querySelectorAll('.road-start');
+	};
 
 	var enableRace = function() {
 		startTime = Date.now();
@@ -131,5 +146,6 @@ var racecarGame = (function() {
 
 
 	init();
+	
 
 }) ()
