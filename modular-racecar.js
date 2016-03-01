@@ -3,11 +3,16 @@ var racecarGame = (function() {
 	var trackStart = document.querySelector('.road-start');
 	var playerOneKey = 70;
 	var playerTwoKey = 74;
+	var startTime;
+	var endTime;
+	var raceTime;
+
+
 
 	var init = function () {
 		trackLength = document.querySelector('#trackLength').value;
 		setTrackLength(trackLength);
-		addEventListener('keyup', keyPressed);
+		//addEventListener('keyup', keyPressed);
 		addCars();
 	};
 
@@ -48,6 +53,7 @@ var racecarGame = (function() {
 	var moveCar = function (lane) {
 		var movingCar = document.querySelector('.car-' + lane);
 		if (movingCar.nextElementSibling === null) {
+				raceTime = calcTime();
 				winner(lane);
 				return;
 		}
@@ -56,9 +62,12 @@ var racecarGame = (function() {
 		movingCar.previousElementSibling.classList.remove('car-' + lane);
 	};
 
+	var calcTime = () => (Date.now() - startTime) / 1000;
+		
+
 	var winner = function(lane) {
 		var winBox = document.createElement('div');
-		winBox.innerHTML = "<p>Congratulations to the driver in lane " + lane + ". They are the winner, press reset to race again!</p>";
+		winBox.innerHTML = "<p>Congratulations to the driver in lane " + lane + ". They won the race in " + raceTime.toFixed(2) + " seconds, press reset to race again!</p>";
 		winBox.classList.add('overlay');
 		document.body.appendChild(winBox);
 		removeEventListener('keyup', keyPressed);
@@ -93,8 +102,9 @@ var racecarGame = (function() {
 			light.classList.toggle('on');
 			light.classList.toggle('off');
 		}
-		setTimeout(twoSecDelay, 1500);
-		setTimeout(twoSecDelay, 3000);		
+		setTimeout(twoSecDelay, 1000);
+		setTimeout(twoSecDelay, 2000);
+		setTimeout(enableRace, 2000);	
 	};
 
 //refactor to make DRY
@@ -107,6 +117,12 @@ var racecarGame = (function() {
 		green.classList.add('off');
 	
 	}
+
+	var enableRace = function() {
+		startTime = Date.now();
+		addEventListener('keyup', keyPressed);
+		
+	};
 
 	var resetBtn = document.querySelector('#reset');
 	var goBtn = document.querySelector('#go');
