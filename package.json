@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SamSimmons/javascript-racer/issues"
   },
-  "homepage": "https://github.com/SamSimmons/javascript-racer#readme"
+  "homepage": "https://github.com/SamSimmons/javascript-racer#readme",
+  "dependencies": {
+    "webpack": "^1.12.14"
+  }
 }
