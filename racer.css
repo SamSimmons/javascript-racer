@@ -162,21 +162,20 @@ input {
 .track-wrapper .track-height-index-9 {
   height: 11vh; }
 
-.touch-buttons {
-  display: none; }
-  .touch-buttons .touch-btn-0 {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background: #6464ff;
-    position: absolute;
-    bottom: 0px;
-    left: 0px; }
-  .touch-buttons .touch-btn-1 {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background: #ff6464;
-    position: absolute;
-    bottom: 0px;
-    right: 0px; }
+.touch-btn-0 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #6464ff;
+  position: absolute;
+  bottom: 0px;
+  left: 0px; }
+
+.touch-btn-1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #ff6464;
+  position: absolute;
+  bottom: 0px;
+  right: 0px; }
