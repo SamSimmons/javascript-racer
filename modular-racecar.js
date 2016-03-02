@@ -17,11 +17,6 @@ var racecarGame = (function() {
 		setHorizon();
 	};
 
-	var isTouchDevice = () => 'ontouchstart' in document.documentElement;
-	if (isTouchDevice) {
-		document.querySelector('.touch-buttons').style.display = 'block';
-	}
-
 	var setTrackLength = function (length) {
 		for (var i = 0; i < length; i++) {
 			createTrackElement();
@@ -149,6 +144,7 @@ var racecarGame = (function() {
 	};
 
 	var touchedBtn = (evt) => {
+		evt.preventDefault();
 		if (evt.srcElement.classList.contains('touch-btn-0')) {
 			moveCar(0);
 		} else if (evt.srcElement.classList.contains('touch-btn-1')) {
