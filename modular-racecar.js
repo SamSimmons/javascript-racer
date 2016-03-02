@@ -17,6 +17,11 @@ var racecarGame = (function() {
 		setHorizon();
 	};
 
+	var isTouchDevice = () => 'ontouchstart' in document.documentElement;
+	if (isTouchDevice) {
+		document.querySelector('.touch-buttons').style.display = 'block';
+	}
+
 	var setTrackLength = function (length) {
 		for (var i = 0; i < length; i++) {
 			createTrackElement();
@@ -135,8 +140,20 @@ var racecarGame = (function() {
 
 	var enableRace = function() {
 		startTime = Date.now();
-		addEventListener('keyup', keyPressed);
-		
+		document.addEventListener('keyup', keyPressed);
+		var touchBtnZero = document.querySelector('.touch-btn-0');
+		var touchBtnOne = document.querySelector('.touch-btn-1');
+
+		touchBtnZero.addEventListener('touchend', touchedBtn);
+		touchBtnOne.addEventListener('touchend', touchedBtn);		
+	};
+
+	var touchedBtn = (evt) => {
+		if (evt.srcElement.classList.contains('touch-btn-0')) {
+			moveCar(0);
+		} else if (evt.srcElement.classList.contains('touch-btn-1')) {
+			moveCar(1);
+		}
 	};
 
 	var resetBtn = document.querySelector('#reset');
@@ -146,6 +163,7 @@ var racecarGame = (function() {
 
 
 	init();
+	
 	
 
 }) ()
